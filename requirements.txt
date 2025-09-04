@@ -1,0 +1,6 @@
+colorama==0.4.6
+lxml==6.0.1
+pandas==2.3.2
+pykml==0.2.0
+pyproj==3.7.2
+Shapely==2.1.1
