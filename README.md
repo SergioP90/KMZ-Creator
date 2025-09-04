@@ -43,6 +43,12 @@ Legend:
 
 ## 🛠 Requirements
 - Python 3.12.4 or higher  
+- colorama 0.4.6
+- lxml 6.0.1
+- pandas 2.3.2
+- pykml 0.2.0
+- pyproj 3.7.2
+- Shapely 2.1.1
 
 
 ---
@@ -69,4 +75,32 @@ Legend:
 > create
 > addlist my_placemarks.txt
 > save my_kmz.kmz
+```
+
+### Open a KMZ and add a point
+```bash
+> open my_kmz.kmz
+> addlonlat Point_1 40.0151 -3.6531
+> save my_kmz.kmz
+```
+
+### Open a KMZ and delete a point
+```bash
+> open my_kmz.kmz
+> delete Point_1
+> save my_kmz.kmz
+```
+
+### Open a KMZ, add a point through UTM and then change it's name
+```bash
+> open my_kmz.kmz
+> addutm Point_x 0 0 10T WGS84
+> modpoint rename Point_x Point_1
+> save my_kmz.kmz
+```
+
+### View more help about the program
+```bash
+> help
+> help modpoint
 ```
